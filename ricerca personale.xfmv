@@ -1,0 +1,397 @@
+<?xml version="1.0" standalone="yes"?>
+<FM Version="0,0,2,0">
+  <Functions colour_t0="-1" colour_t1="0" colour_t2="0.5" colour_t3="1" colour_t4="2" c_t0_value="0x40cfff" c_t2_value="0xffff00" c_t4_value="0xf00000" colour_p0="-1" colour_p1="0" colour_p2="0.5" colour_p3="1" colour_p4="2" c_p0_value="0x40cfff" c_p2_value="0xffff00" c_p4_value="0xf00000" tracer_t="" tracer_p="">
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="67" y="99.99998474121094">
+      <IDNr>0</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Assunzione Regista</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="440.04995422363277" y="306">
+      <IDNr>1</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Ricerca attori</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="331.0000915527344" y="23.000015258789063">
+      <IDNr>2</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Necessità di sostituzione del regista</IDName>
+      <Description/>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="501.99996948242193" y="454">
+      <IDNr>3</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Infortunio durante le riprese</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="713.0499267578125" y="536.9999389648438">
+      <IDNr>4</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Necessità di sostituzione del personale tecnico</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="163.04995727539063" y="441.9999389648438">
+      <IDNr>5</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Assunzione personale tecnico</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="849.0499267578125" y="235">
+      <IDNr>6</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Necessità di sostituzione degli attori</IDName>
+    </Function>
+  </Functions>
+  <Controls>
+    <Control orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>2</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Control>
+    <Control orphan="">
+      <IDNr>3</IDNr>
+      <IDName>Regista</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>4</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>5</IDNr>
+      <IDName>Produttore</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Control>
+    <Control orphan="">
+      <IDNr>6</IDNr>
+      <IDName>Regista</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>7</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>4</FunctionIDNr>
+    </Control>
+    <Control orphan="">
+      <IDNr>8</IDNr>
+      <IDName>Regista</IDName>
+      <FunctionIDNr>4</FunctionIDNr>
+    </Control>
+    <Control orphan="">
+      <IDNr>9</IDNr>
+      <IDName>Regista</IDName>
+      <FunctionIDNr>6</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>10</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>6</FunctionIDNr>
+    </Control>
+  </Controls>
+  <Inputs>
+    <Input orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Proposta di lavoro</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Input>
+    <Input orphan="true">
+      <IDNr>2</IDNr>
+      <IDName>Casting</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Input>
+    <Input orphan="true">
+      <IDNr>3</IDNr>
+      <IDName>Divergenze creative col regista</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Input>
+    <Input orphan="true">
+      <IDNr>4</IDNr>
+      <IDName>Problemi di salute o famiglia del regista</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Input>
+    <Input orphan="true">
+      <IDNr>6</IDNr>
+      <IDName>Incidente</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Input>
+    <Input orphan="true">
+      <IDNr>7</IDNr>
+      <IDName>Uno o più membri dello staff non disponibili</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Input>
+    <Input orphan="">
+      <IDNr>8</IDNr>
+      <IDName>Ricerca di sostituti</IDName>
+      <FunctionIDNr>4</FunctionIDNr>
+    </Input>
+    <Input orphan="true">
+      <IDNr>9</IDNr>
+      <IDName>Proposta di lavoro</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Input>
+    <Input orphan="">
+      <IDNr>10</IDNr>
+      <IDName>Ricerca di sostituti</IDName>
+      <FunctionIDNr>6</FunctionIDNr>
+    </Input>
+  </Inputs>
+  <Outputs>
+    <Output orphan="">
+      <IDNr>1</IDNr>
+      <IDName>Regista</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Output>
+    <Output orphan="true">
+      <IDNr>2</IDNr>
+      <IDName>Attori</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>3</IDNr>
+      <IDName>Lista di potenziali altri attori candidati</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>4</IDNr>
+      <IDName>Lista di potenziali altri registi candidati</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>5</IDNr>
+      <IDName>Regista</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>6</IDNr>
+      <IDName>Ricerca di sostituti</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Output>
+    <Output orphan="true">
+      <IDNr>7</IDNr>
+      <IDName>Membro dello staff soccorso</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Output>
+    <Output orphan="true">
+      <IDNr>8</IDNr>
+      <IDName>Personale tecnico</IDName>
+      <FunctionIDNr>4</FunctionIDNr>
+    </Output>
+    <Output orphan="true">
+      <IDNr>9</IDNr>
+      <IDName>Personale tecnico</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>10</IDNr>
+      <IDName>Lista di potenziali candidati come personale tecnico</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Output>
+    <Output orphan="true">
+      <IDNr>11</IDNr>
+      <IDName>Attori</IDName>
+      <FunctionIDNr>6</FunctionIDNr>
+    </Output>
+  </Outputs>
+  <Preconditions>
+    <Precondition orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Budget</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>2</IDNr>
+      <IDName>Competenze del regista</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>3</IDNr>
+      <IDName>Budget</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>4</IDNr>
+      <IDName>Competenze degli attori</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>5</IDNr>
+      <IDName>Affinità coi ruoli</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>6</IDNr>
+      <IDName>Budget</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>7</IDNr>
+      <IDName>Competenze del regista</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>8</IDNr>
+      <IDName>Budget</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>9</IDNr>
+      <IDName>Capacità e referenze del personale tecnico</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>10</IDNr>
+      <IDName>Budget</IDName>
+      <FunctionIDNr>4</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>11</IDNr>
+      <IDName>Capacità e referenze del personale tecnico</IDName>
+      <FunctionIDNr>4</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>12</IDNr>
+      <IDName>Budget</IDName>
+      <FunctionIDNr>6</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>13</IDNr>
+      <IDName>Competenze degli attori</IDName>
+      <FunctionIDNr>6</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>14</IDNr>
+      <IDName>Affinità coi ruoli</IDName>
+      <FunctionIDNr>6</FunctionIDNr>
+    </Precondition>
+  </Preconditions>
+  <Resources>
+    <Resource orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Annuncio di lavoro</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>2</IDNr>
+      <IDName>Conoscenze personali</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>3</IDNr>
+      <IDName>Fama del regista</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>4</IDNr>
+      <IDName>Bando per il casting</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>5</IDNr>
+      <IDName>Conoscenze personali</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>6</IDNr>
+      <IDName>Fama dell'attore</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Resource>
+    <Resource orphan="">
+      <IDNr>7</IDNr>
+      <IDName>Lista di potenziali altri registi candidati</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>8</IDNr>
+      <IDName>Unità di soccorso</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>9</IDNr>
+      <IDName>Lista di potenziali candidati</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Resource>
+    <Resource orphan="">
+      <IDNr>10</IDNr>
+      <IDName>Lista di potenziali candidati come personale tecnico</IDName>
+      <FunctionIDNr>4</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>11</IDNr>
+      <IDName>Bando di lavoro</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>12</IDNr>
+      <IDName>Conoscenze personali</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Resource>
+    <Resource orphan="">
+      <IDNr>13</IDNr>
+      <IDName>Lista di potenziali altri attori candidati</IDName>
+      <FunctionIDNr>6</FunctionIDNr>
+    </Resource>
+  </Resources>
+  <Times/>
+  <Aspects scaleFunction="1" scaleAspect="1" scaleZoom="1">
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="0" toFn="1">
+      <Name>0|Regista|1|C</Name>
+      <Curve>160.500|150.000|511.550|318.000|511.550|234.000|336.025|150.000|423.787|192.000</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="2" toFn="1">
+      <Name>2|Regista|1|C</Name>
+      <Curve>424.500|73.000|511.550|318.000|511.550|195.500|468.025|73.000|489.787|134.250</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="0" toFn="2">
+      <Name>0|Lista di potenziali altri registi candidati|2|R</Name>
+      <Curve>160.500|150.000|402.500|111.000|402.500|130.500|281.500|150.000|342.000|140.250</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="3" toFn="4">
+      <Name>3|Ricerca di sostituti|4|I</Name>
+      <Curve>595.500|504.000|719.050|587.000|688.162|587.000|626.387|504.000|657.275|545.500</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="0" toFn="5">
+      <Name>0|Regista|5|C</Name>
+      <Curve>160.500|150.000|234.550|454.000|234.550|302.000|197.525|150.000|216.037|226.000</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="2" toFn="5">
+      <Name>2|Regista|5|C</Name>
+      <Curve>424.500|73.000|234.550|454.000|349.525|454.000|444.500|263.500|397.013|358.750</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="5" toFn="4">
+      <Name>5|Lista di potenziali candidati come personale tecnico|4|R</Name>
+      <Curve>256.550|492.000|784.550|625.000|784.550|645.000|276.550|645.000|652.550|645.000</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="0" toFn="4">
+      <Name>0|Regista|4|C</Name>
+      <Curve>160.500|150.000|784.550|549.000|784.550|349.500|472.525|150.000|628.537|249.750</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="2" toFn="4">
+      <Name>2|Regista|4|C</Name>
+      <Curve>424.500|73.000|784.550|549.000|784.550|311.000|604.525|73.000|694.537|192.000</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="3" toFn="6">
+      <Name>3|Ricerca di sostituti|6|I</Name>
+      <Curve>595.500|504.000|855.050|285.000|790.162|285.000|660.387|504.000|725.275|394.500</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="1" toFn="6">
+      <Name>1|Lista di potenziali altri attori candidati|6|R</Name>
+      <Curve>533.550|356.000|920.550|323.000|920.550|339.500|727.050|356.000|823.800|347.750</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="0" toFn="6">
+      <Name>0|Regista|6|C</Name>
+      <Curve>160.500|150.000|920.550|247.000|920.550|198.500|540.525|150.000|730.537|174.250</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="2" toFn="6">
+      <Name>2|Regista|6|C</Name>
+      <Curve>424.500|73.000|920.550|247.000|920.550|160.000|672.525|73.000|796.537|116.500</Curve>
+    </Aspect>
+  </Aspects>
+  <Playbacks>
+    <Playback type="0">0</Playback>
+    <Playback type="0">1</Playback>
+    <Playback type="0">5</Playback>
+    <Playback type="2">END</Playback>
+  </Playbacks>
+</FM>

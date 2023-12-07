@@ -1,0 +1,534 @@
+<?xml version="1.0" standalone="yes"?>
+<FM Version="0,0,2,0">
+  <Functions colour_t0="-1" colour_t1="0" colour_t2="0.5" colour_t3="1" colour_t4="2" c_t0_value="0x40cfff" c_t2_value="0xffff00" c_t4_value="0xf00000" colour_p0="-1" colour_p1="0" colour_p2="0.5" colour_p3="1" colour_p4="2" c_p0_value="0x40cfff" c_p2_value="0xffff00" c_p4_value="0xf00000" tracer_t="" tracer_p="">
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="1081.45" y="291.65" Kt="" Kp="">
+      <IDNr>0</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Uscita Film</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="913" y="194.35" Kt="" Kp="">
+      <IDNr>1</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Assegnare una data di uscita</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="936" y="15" Kt="" Kp="">
+      <IDNr>2</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Film non pronto</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="904" y="559" Kt="" Kp="">
+      <IDNr>3</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Vendita del Film</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="46" y="60.5" Kt="" Kp="" fnType="0">
+      <IDNr>4</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Proporre una sceneggiatura</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="215" y="264" Kt="" Kp="" fnType="3">
+      <IDNr>5</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Pre-produzione</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="21.75" y="346.85" Kt="" Kp="" fnType="0">
+      <IDNr>6</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Riproposta della sceneggiatura</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="676" y="260" Kt="" Kp="">
+      <IDNr>7</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Post-produzione</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="145.25" y="603.55" fnType="3" Kt="" Kp="">
+      <IDNr>8</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Ottenimento budget</IDName>
+      <Description>- Più specifico in file "budget.xfmv"</Description>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="424" y="273" fnType="0" Kt="" Kp="">
+      <IDNr>9</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Riprese</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="379" y="32" Kt="" Kp="">
+      <IDNr>10</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Assunzione Personale</IDName>
+      <Description>- Più specifico in file "ricerca personale.xfmv"</Description>
+    </Function>
+  </Functions>
+  <Controls>
+    <Control orphan="true">
+      <IDNr>2</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>5</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>6</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>4</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>0</IDNr>
+      <IDName>Produttore</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Control>
+    <Control orphan="">
+      <IDNr>1</IDNr>
+      <IDName>Regista</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>0</IDNr>
+      <IDName>Sceneggiatore</IDName>
+      <FunctionIDNr>6</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>0</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>8</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>0</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>9</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>17</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>18</IDNr>
+      <IDName>Sponsor</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>0</IDNr>
+      <IDName>Produttore</IDName>
+      <FunctionIDNr>10</FunctionIDNr>
+    </Control>
+  </Controls>
+  <Inputs>
+    <Input orphan="">
+      <IDNr>1</IDNr>
+      <IDName>Annuncio data di uscita</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Input>
+    <Input orphan="">
+      <IDNr>2</IDNr>
+      <IDName>Film</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Input>
+    <Input orphan="">
+      <IDNr>3</IDNr>
+      <IDName>Ritardo</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Input>
+    <Input orphan="true">
+      <IDNr>4</IDNr>
+      <IDName>Proposte di vendità</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Input>
+    <Input orphan="">
+      <IDNr>5</IDNr>
+      <IDName>Sceneggiatura</IDName>
+      <FunctionIDNr>4</FunctionIDNr>
+    </Input>
+    <Input orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Produzione di un film</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Input>
+    <Input orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Rifiuto della sceneggiatura</IDName>
+      <FunctionIDNr>6</FunctionIDNr>
+    </Input>
+    <Input orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Materiale delle riprese</IDName>
+      <FunctionIDNr>7</FunctionIDNr>
+    </Input>
+    <Input orphan="true">
+      <IDNr>0</IDNr>
+      <IDName>Richiesta ai produttori</IDName>
+      <FunctionIDNr>8</FunctionIDNr>
+    </Input>
+    <Input orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Inizio riprese</IDName>
+      <FunctionIDNr>9</FunctionIDNr>
+    </Input>
+    <Input orphan="true">
+      <IDNr>0</IDNr>
+      <IDName>Necessità di personale</IDName>
+      <FunctionIDNr>10</FunctionIDNr>
+    </Input>
+  </Inputs>
+  <Outputs>
+    <Output orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Uscita del film</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>2</IDNr>
+      <IDName>Ritardo</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>3</IDNr>
+      <IDName>Annuncio data di uscita</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>5</IDNr>
+      <IDName>Materiale delle riprese</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>6</IDNr>
+      <IDName>Piattaforma di streaming</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>7</IDNr>
+      <IDName>Cinema</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>8</IDNr>
+      <IDName>Produzione di un film</IDName>
+      <FunctionIDNr>4</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>9</IDNr>
+      <IDName>Rifiuto della sceneggiatura</IDName>
+      <FunctionIDNr>4</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Inizio riprese</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Sceneggiatura</IDName>
+      <FunctionIDNr>6</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Film</IDName>
+      <FunctionIDNr>7</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Budget</IDName>
+      <FunctionIDNr>8</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>1</IDNr>
+      <IDName>Direttive sui tagli delle spese</IDName>
+      <FunctionIDNr>8</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Materiale delle riprese</IDName>
+      <FunctionIDNr>9</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Regista</IDName>
+      <FunctionIDNr>10</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>1</IDNr>
+      <IDName>Attori</IDName>
+      <FunctionIDNr>10</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>2</IDNr>
+      <IDName>Personale Tecnico</IDName>
+      <FunctionIDNr>10</FunctionIDNr>
+    </Output>
+  </Outputs>
+  <Preconditions>
+    <Precondition orphan="">
+      <IDNr>1</IDNr>
+      <IDName>Film</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="true">
+      <IDNr>0</IDNr>
+      <IDName>Disponibilità economica</IDName>
+      <FunctionIDNr>8</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Regista</IDName>
+      <FunctionIDNr>9</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="">
+      <IDNr>1</IDNr>
+      <IDName>Budget</IDName>
+      <FunctionIDNr>9</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="">
+      <IDNr>2</IDNr>
+      <IDName>Attori</IDName>
+      <FunctionIDNr>9</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Budget</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Budget</IDName>
+      <FunctionIDNr>7</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="">
+      <IDNr>21</IDNr>
+      <IDName>Film</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Precondition>
+    <Precondition orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Budget</IDName>
+      <FunctionIDNr>10</FunctionIDNr>
+    </Precondition>
+  </Preconditions>
+  <Resources>
+    <Resource orphan="">
+      <IDNr>1</IDNr>
+      <IDName>Piattaforma di streaming</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Resource>
+    <Resource orphan="">
+      <IDNr>2</IDNr>
+      <IDName>Cinema</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>4</IDNr>
+      <IDName>Social Network</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>5</IDNr>
+      <IDName>Pubblicità</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>7</IDNr>
+      <IDName>Social Network</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>9</IDNr>
+      <IDName>Pubblicità</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Resource>
+    <Resource orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Direttive sui tagli delle spese</IDName>
+      <FunctionIDNr>5</FunctionIDNr>
+    </Resource>
+    <Resource orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Personale Tecnico</IDName>
+      <FunctionIDNr>7</FunctionIDNr>
+    </Resource>
+    <Resource orphan="">
+      <IDNr>0</IDNr>
+      <IDName>Direttive sui tagli delle spese</IDName>
+      <FunctionIDNr>9</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>0</IDNr>
+      <IDName>Sponsor</IDName>
+      <FunctionIDNr>8</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Personale tecnico</IDName>
+      <FunctionIDNr>9</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>0</IDNr>
+      <IDName>Modifica sceneggiatura</IDName>
+      <FunctionIDNr>6</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Ricerca nuovi produttori</IDName>
+      <FunctionIDNr>6</FunctionIDNr>
+    </Resource>
+    <Resource orphan="">
+      <IDNr>1</IDNr>
+      <IDName>Direttive sui tagli delle spese</IDName>
+      <FunctionIDNr>7</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>2</IDNr>
+      <IDName>Sostituti</IDName>
+      <FunctionIDNr>9</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>0</IDNr>
+      <IDName>Bando di lavoro</IDName>
+      <FunctionIDNr>10</FunctionIDNr>
+    </Resource>
+  </Resources>
+  <Times>
+    <Time orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Entro data di uscita annunciata</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Time>
+    <Time orphan="true">
+      <IDNr>2</IDNr>
+      <IDName>Entro un mese prima della data di uscita</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Time>
+    <Time orphan="true">
+      <IDNr>3</IDNr>
+      <IDName>Entro data di uscita annunciata</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Time>
+    <Time orphan="true">
+      <IDNr>0</IDNr>
+      <IDName>Prima dell'inizio delle riprese</IDName>
+      <FunctionIDNr>10</FunctionIDNr>
+    </Time>
+    <Time orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Entro l'inizio della fase di produzione</IDName>
+      <FunctionIDNr>8</FunctionIDNr>
+    </Time>
+    <Time orphan="true">
+      <IDNr>2</IDNr>
+      <IDName>Entro l'uscita del film in caso di spese extra</IDName>
+      <FunctionIDNr>8</FunctionIDNr>
+    </Time>
+  </Times>
+  <Aspects scaleFunction="1" scaleAspect="1" scaleZoom="1">
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="0" toFn="2">
+      <Name>0|Ritardo|2|I</Name>
+      <Curve>1174.950|341.650|942.000|65.000|922.000|168.744|1194.950|237.906|1058.475|203.325</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="1" toFn="0">
+      <Name>1|Annuncio data di uscita|0|I</Name>
+      <Curve>1006.500|244.350|1087.450|341.650|1067.213|341.650|1026.737|244.350|1046.975|293.000</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="2" toFn="7">
+      <Name>2|Materiale delle riprese|7|I</Name>
+      <Curve>1029.500|65.000|682.000|310.000|662.000|218.125|1049.500|156.875|855.750|187.500</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="3" toFn="0">
+      <Name>3|Piattaforma di streaming|0|R</Name>
+      <Curve>997.500|609.000|1152.950|379.650|1152.950|494.325|1075.225|609.000|1114.088|551.663</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="3" toFn="0">
+      <Name>3|Cinema|0|R</Name>
+      <Curve>997.500|609.000|1152.950|379.650|1152.950|494.325|1075.225|609.000|1114.088|551.663</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="4" toFn="5">
+      <Name>4|Produzione di un film|5|I</Name>
+      <Curve>139.500|110.500|221.000|314.000|200.625|314.000|159.875|110.500|180.250|212.250</Curve>
+    </Aspect>
+    <Aspect x="0.910" y="0.364" directionX="from" directionY="from" notGroup="true" outputFn="4" toFn="6">
+      <Name>4|Rifiuto della sceneggiatura|6|I</Name>
+      <Curve>139.500|110.500|27.750|396.850|7.750|289.469|159.500|217.881|83.625|253.675</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="5" toFn="9">
+      <Name>5|Inizio riprese|9|I</Name>
+      <Curve>308.500|314.000|430.000|323.000|399.625|323.000|338.875|314.000|369.250|318.500</Curve>
+    </Aspect>
+    <Aspect x="1.249" y="0.432" directionX="from" directionY="from" notGroup="true" outputFn="6" toFn="4">
+      <Name>6|Sceneggiatura|4|I</Name>
+      <Curve>115.250|396.850|52.000|110.500|32.000|217.881|135.250|289.469|83.625|253.675</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="7" toFn="0">
+      <Name>7|Film|0|P</Name>
+      <Curve>769.500|310.000|1109.450|379.650|939.475|379.650|854.487|310.000|896.981|344.825</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="7" toFn="1">
+      <Name>7|Film|1|I</Name>
+      <Curve>769.500|310.000|919.000|244.350|881.625|244.350|806.875|310.000|844.250|277.175</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="7" toFn="3">
+      <Name>7|Film|3|P</Name>
+      <Curve>769.500|310.000|932.000|647.000|850.750|647.000|810.125|310.000|830.438|478.500</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="8" toFn="5">
+      <Name>8|Budget|5|P</Name>
+      <Curve>238.750|653.550|243.000|352.000|241.938|502.775|239.813|653.550|240.875|578.162</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="8" toFn="7">
+      <Name>8|Budget|7|P</Name>
+      <Curve>238.750|653.550|704.000|348.000|587.688|500.775|355.063|653.550|471.375|577.162</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="8" toFn="9">
+      <Name>8|Budget|9|P</Name>
+      <Curve>238.750|653.550|452.000|361.000|398.688|507.275|292.063|653.550|345.375|580.412</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="8" toFn="10">
+      <Name>8|Budget|10|P</Name>
+      <Curve>238.750|653.550|407.000|120.000|364.938|386.775|280.813|653.550|322.875|520.162</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="8" toFn="5">
+      <Name>8|Direttive sui tagli delle spese|5|R</Name>
+      <Curve>238.750|653.550|286.500|352.000|286.500|502.775|262.625|653.550|274.563|578.162</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="8" toFn="7">
+      <Name>8|Direttive sui tagli delle spese|7|R</Name>
+      <Curve>238.750|653.550|747.500|348.000|747.500|500.775|493.125|653.550|620.313|577.162</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="8" toFn="9">
+      <Name>8|Direttive sui tagli delle spese|9|R</Name>
+      <Curve>238.750|653.550|495.500|361.000|495.500|507.275|367.125|653.550|431.313|580.412</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="9" toFn="7">
+      <Name>9|Materiale delle riprese|7|I</Name>
+      <Curve>517.500|323.000|682.000|310.000|640.875|310.000|558.625|323.000|599.750|316.500</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="10" toFn="5">
+      <Name>10|Regista|5|C</Name>
+      <Curve>472.500|82.000|286.500|276.000|399.500|276.000|492.500|179.000|446.000|227.500</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="10" toFn="9">
+      <Name>10|Regista|9|P</Name>
+      <Curve>472.500|82.000|452.000|361.000|452.000|381.000|492.500|381.000|457.125|381.000</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="10" toFn="9">
+      <Name>10|Attori|9|P</Name>
+      <Curve>472.500|82.000|452.000|361.000|452.000|381.000|492.500|381.000|457.125|381.000</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="10" toFn="7">
+      <Name>10|Personale Tecnico|7|R</Name>
+      <Curve>472.500|82.000|747.500|348.000|747.500|368.000|492.500|368.000|678.750|368.000</Curve>
+    </Aspect>
+  </Aspects>
+  <Playbacks>
+    <Playback type="0">4</Playback>
+    <Playback type="0">8</Playback>
+    <Playback type="0">10</Playback>
+    <Playback type="0">5</Playback>
+    <Playback type="0">9</Playback>
+    <Playback type="0">7</Playback>
+    <Playback type="0">1</Playback>
+    <Playback type="0">3</Playback>
+    <Playback type="0">0</Playback>
+    <Playback type="2">END</Playback>
+  </Playbacks>
+</FM>

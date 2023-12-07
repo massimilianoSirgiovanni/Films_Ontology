@@ -1,0 +1,215 @@
+<?xml version="1.0" standalone="yes"?>
+<FM Version="0,0,2,0">
+  <Functions colour_t0="-1" colour_t1="0" colour_t2="0.5" colour_t3="1" colour_t4="2" c_t0_value="0x40cfff" c_t2_value="0xffff00" c_t4_value="0xf00000" colour_p0="-1" colour_p1="0" colour_p2="0.5" colour_p3="1" colour_p4="2" c_p0_value="0x40cfff" c_p2_value="0xffff00" c_p4_value="0xf00000" tracer_t="" tracer_p="">
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="195.99996948242188" y="295.04994201660156" Kt="" Kp="">
+      <IDNr>0</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Richiesta budget ai produttori</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="402" y="150" Kt="" Kp="">
+      <IDNr>1</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Ricerca di sponsor</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="615" y="296" Kt="" Kp="">
+      <IDNr>2</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Tagli alle spese</IDName>
+    </Function>
+    <Function fnStyle="0" Tp="-1" Pp="-1" x="405" y="383.00001525878906">
+      <IDNr>3</IDNr>
+      <FunctionType>0</FunctionType>
+      <IDName>Crowdfunding</IDName>
+    </Function>
+  </Functions>
+  <Controls>
+    <Control orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>2</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>3</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>4</IDNr>
+      <IDName>Regista</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Control>
+    <Control orphan="true">
+      <IDNr>5</IDNr>
+      <IDName>Produttori</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Control>
+  </Controls>
+  <Inputs>
+    <Input orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Idea per film</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Input>
+    <Input orphan="true">
+      <IDNr>2</IDNr>
+      <IDName>Lista dei costi necessari per la produzione</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Input>
+    <Input orphan="true">
+      <IDNr>3</IDNr>
+      <IDName>Budget insufficiente</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Input>
+    <Input orphan="">
+      <IDNr>4</IDNr>
+      <IDName>Budget insufficiente</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Input>
+    <Input orphan="true">
+      <IDNr>5</IDNr>
+      <IDName>Budget insufficiente</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Input>
+  </Inputs>
+  <Outputs>
+    <Output orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Budget sufficiente</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Output>
+    <Output orphan="">
+      <IDNr>2</IDNr>
+      <IDName>Budget insufficiente</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Output>
+    <Output orphan="true">
+      <IDNr>3</IDNr>
+      <IDName>Budget sufficiente</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Output>
+    <Output orphan="true">
+      <IDNr>4</IDNr>
+      <IDName>Budget insufficiente</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Output>
+    <Output orphan="true">
+      <IDNr>5</IDNr>
+      <IDName>Budget</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Output>
+    <Output orphan="true">
+      <IDNr>6</IDNr>
+      <IDName/>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Output>
+    <Output orphan="true">
+      <IDNr>7</IDNr>
+      <IDName>Budget insufficiente</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Output>
+    <Output orphan="true">
+      <IDNr>8</IDNr>
+      <IDName>Budget sufficiente</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Output>
+  </Outputs>
+  <Preconditions/>
+  <Resources>
+    <Resource orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Idea per film</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>2</IDNr>
+      <IDName>Pubblicità interna al film</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>3</IDNr>
+      <IDName>Product Placement</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>4</IDNr>
+      <IDName>Idea per film</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>5</IDNr>
+      <IDName>Patreon (o eventuali altri canali)</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>6</IDNr>
+      <IDName>Teaser trailer</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Resource>
+    <Resource orphan="true">
+      <IDNr>7</IDNr>
+      <IDName>Vantaggi per i donatori</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Resource>
+  </Resources>
+  <Times>
+    <Time orphan="true">
+      <IDNr>1</IDNr>
+      <IDName>Entro l'uscita del film</IDName>
+      <FunctionIDNr>2</FunctionIDNr>
+    </Time>
+    <Time orphan="true">
+      <IDNr>2</IDNr>
+      <IDName>Entro l'uscita del film</IDName>
+      <FunctionIDNr>3</FunctionIDNr>
+    </Time>
+    <Time orphan="true">
+      <IDNr>3</IDNr>
+      <IDName>Entro l'uscita del film</IDName>
+      <FunctionIDNr>1</FunctionIDNr>
+    </Time>
+    <Time orphan="true">
+      <IDNr>4</IDNr>
+      <IDName>Entro l'uscita del film</IDName>
+      <FunctionIDNr>0</FunctionIDNr>
+    </Time>
+  </Times>
+  <Aspects scaleFunction="1" scaleAspect="1" scaleZoom="1">
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="0" toFn="1">
+      <Name>0|Budget insufficiente|1|I</Name>
+      <Curve>289.450|345.000|408.000|200.000|378.363|200.000|319.087|345.000|348.725|272.500</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="0" toFn="2">
+      <Name>0|Budget insufficiente|2|I</Name>
+      <Curve>289.450|345.000|621.000|346.000|538.112|346.000|372.337|345.000|455.225|345.500</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="1" toFn="2">
+      <Name>1|Budget insufficiente|2|I</Name>
+      <Curve>495.500|200.000|621.000|346.000|589.625|346.000|526.875|200.000|558.250|273.000</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="0" toFn="3">
+      <Name>0|Budget insufficiente|3|I</Name>
+      <Curve>289.450|345.000|411.000|433.000|380.613|433.000|319.838|345.000|350.225|389.000</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="1" toFn="3">
+      <Name>1|Budget insufficiente|3|I</Name>
+      <Curve>495.500|200.000|411.000|433.000|391.000|345.625|515.500|287.375|453.250|316.500</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="3" toFn="1">
+      <Name>3|Budget insufficiente|1|I</Name>
+      <Curve>498.500|433.000|408.000|200.000|388.000|287.375|518.500|345.625|453.250|316.500</Curve>
+    </Aspect>
+    <Aspect x="0" y="0" directionX="from" directionY="to" notGroup="true" outputFn="3" toFn="2">
+      <Name>3|Budget insufficiente|2|I</Name>
+      <Curve>498.500|433.000|621.000|346.000|590.375|346.000|529.125|433.000|559.750|389.500</Curve>
+    </Aspect>
+  </Aspects>
+  <Playbacks>
+    <Playback type="0">0</Playback>
+    <Playback type="2">END</Playback>
+  </Playbacks>
+</FM>

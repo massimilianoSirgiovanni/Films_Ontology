@@ -1,0 +1,1505 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2022/7/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2022/7/untitled-ontology-11"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:film="http://protege-owl/2022/film#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://protege-owl/2022/film"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://protege-owl/2022/film#antagonistOf -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#antagonistOf">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#characterOf"/>
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#hasAntagonist"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Character"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#bought -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#bought">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#investIn"/>
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#wasBought"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Buyer_Company"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#boughtTicketAt -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#boughtTicketAt">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#usesService"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Spectator"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Cinema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#characterOf -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#characterOf">
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#hasCharacter"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Character"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#composedBy -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#composedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#isComposerOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Soundtrack"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Composer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#contain -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#contain">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#containAsActor -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#containAsActor">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#containAsWorker"/>
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#starring"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#containAsWorker -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#containAsWorker">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#contain"/>
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#hasWorkedIn"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#containsAsComposer -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#containsAsComposer">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#containAsWorker"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Composer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#containsAsSoundtrack -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#containsAsSoundtrack">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#contain"/>
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#isSoundtrackOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Soundtrack"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#directedBy -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#directedBy">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#containAsWorker"/>
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#hasDirected"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#disliked -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#disliked">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#haveSeen"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Spectator"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#favorite -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#favorite">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#liked"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Spectator"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#hasAntagonist -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#hasAntagonist">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#hasCharacter"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#hasCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#hasCharacter">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#contain"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#hasContent -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#hasContent">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#contain"/>
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#inFranchise"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Franchise"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#hasDirected -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#hasDirected">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#hasWorkedIn"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Director"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#hasProtagonist -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#hasProtagonist">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#hasCharacter"/>
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#protagonistOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#hasWorkedIn -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#hasWorkedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Person"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#haveSeen -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#haveSeen">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Spectator"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#inFranchise -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#inFranchise">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#contain"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Franchise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#investIn -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#investIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#supportedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Company"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#isComposerOf -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#isComposerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Composer"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Soundtrack"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#isLocated -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#isLocated">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#isSoundtrackOf -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#isSoundtrackOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Soundtrack"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#liked -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#liked">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#haveSeen"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Spectator"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#playCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#playCharacter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#playedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Actor"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#playedBy -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#playedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Character"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#producedBy -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#producedBy">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#supportedBy"/>
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#producerOf"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#producerOf -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#producerOf">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#investIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#proposedScreenplay -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#proposedScreenplay">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Scriptwriter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#protagonistOf -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#protagonistOf">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#characterOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Character"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#screenplayFrom -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#screenplayFrom">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#containAsWorker"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Scriptwriter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#shootingLocationIs -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#shootingLocationIs">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#contain"/>
+        <owl:inverseOf rdf:resource="http://protege-owl/2022/film#shootingLocationOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#shootingLocationOf -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#shootingLocationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Location"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#starring -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#starring">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#hasWorkedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Actor"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#stunt -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#stunt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Stand-in"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#subscribed -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#subscribed">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#usesService"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Spectator"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Streaming_Platform"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#supportedBy -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#supportedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#usesService -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#usesService">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#wasBought -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#wasBought">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#supportedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Buyer_Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#workColleague -->
+
+    <owl:ObjectProperty rdf:about="http://protege-owl/2022/film#workColleague">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Worker"/>
+        <rdfs:range rdf:resource="http://protege-owl/2022/film#Worker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://protege-owl/2022/film#Buyer_properties -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#Buyer_properties">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Buyer_Company"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#Episode_content_properties -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#Episode_content_properties">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Multimedia_content_properties"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Episode_content"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#Location_properties -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#Location_properties">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#Multimedia_content_properties -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#Multimedia_content_properties">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#Person_properites -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#Person_properites">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#Soundtrack_properties -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#Soundtrack_properties">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#age -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#age">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Person_properites"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#box_office -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#box_office">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Multimedia_content_properties"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Unit of measure: dollars</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#budget -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#budget">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Multimedia_content_properties"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Unit of measure: dollars</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#companyName -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#companyName">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Buyer_properties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#duration">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Soundtrack_properties"/>
+        <rdfs:comment>Unity of measure: Minutes</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#duration_of_episodes -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#duration_of_episodes">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Episode_content_properties"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Episode_content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <owl:propertyDisjointWith rdf:resource="http://protege-owl/2022/film#number_of_episodes"/>
+        <rdfs:comment>Measure: minutes</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#first_name">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Person_properites"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#genre -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#genre">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Multimedia_content_properties"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#last_name">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Person_properites"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#locationName -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#locationName">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Location_properties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#number_of_episodes -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#number_of_episodes">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Episode_content_properties"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Episode_content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#pg_rating -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#pg_rating">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Multimedia_content_properties"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#realization_technique -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#realization_technique">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Multimedia_content_properties"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#release_date -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#release_date">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Multimedia_content_properties"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Format: gg/mm/yyyy</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#running_time -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#running_time">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Multimedia_content_properties"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Unit of measure: minutes</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#salary -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#salary">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Person_properites"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Worker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Unity of measure: Dollars ($)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#songTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#songTitle">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Soundtrack_properties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#sponsored_company -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#sponsored_company">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Multimedia_content_properties"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Advertisement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#stage_name -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#stage_name">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Person_properites"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#subtitle -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#subtitle">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Multimedia_content_properties"/>
+        <rdfs:domain rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://protege-owl/2022/film#title -->
+
+    <owl:DatatypeProperty rdf:about="http://protege-owl/2022/film#title">
+        <rdfs:subPropertyOf rdf:resource="http://protege-owl/2022/film#Multimedia_content_properties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://protege-owl/2022/film#Actor -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Actor">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Creative_role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Adult -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Adult">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Spectator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Advertisement -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Advertisement">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Buyer_Company -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Buyer_Company">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Camera_Operator -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Camera_Operator">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Technical_role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Catering_clerk -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Catering_clerk">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Technical_role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Character -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Character">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Child -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Child">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Spectator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Cinema -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Cinema">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Buyer_Company"/>
+        <owl:disjointWith rdf:resource="http://protege-owl/2022/film#Streaming_Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#City -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#City">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Company -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Company">
+        <owl:disjointWith rdf:resource="http://protege-owl/2022/film#Location"/>
+        <owl:disjointWith rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+        <owl:disjointWith rdf:resource="http://protege-owl/2022/film#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Composer -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Composer">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Creative_role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Control_role -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Control_role">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Worker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Costume_Designer -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Costume_Designer">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Creative_role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Creative_role -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Creative_role">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Worker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Director -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Director">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Control_role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Editor -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Editor">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Technical_role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Elder -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Elder">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Spectator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Episode_content -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Episode_content">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+        <owl:disjointWith rdf:resource="http://protege-owl/2022/film#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Feature_film -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Feature_film">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Film -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Film">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Franchise -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Franchise">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+        <owl:disjointWith rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Landscape -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Landscape">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Location -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Location">
+        <owl:disjointWith rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+        <owl:disjointWith rdf:resource="http://protege-owl/2022/film#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Medical_staff -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Medical_staff">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Technical_role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Medium-length_film -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Medium-length_film">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Multimedia_content -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Multimedia_content">
+        <owl:disjointWith rdf:resource="http://protege-owl/2022/film#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Person -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Person"/>
+    
+
+
+    <!-- http://protege-owl/2022/film#Photography_director -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Photography_director">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Technical_role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Producer -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Producer">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Control_role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Producer_Company -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Producer_Company">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Production_studio -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Production_studio">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Scriptwriter -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Scriptwriter">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Creative_role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Short_film -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Short_film">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Single_multimedia_content -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Single_multimedia_content">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Multimedia_content"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Soundtrack -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Soundtrack"/>
+    
+
+
+    <!-- http://protege-owl/2022/film#Spectator -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Spectator">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Stand-in -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Stand-in">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Streaming_Platform -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Streaming_Platform">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Buyer_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#TV_serie -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#TV_serie">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Episode_content"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Technical_role -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Technical_role">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Worker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Teenager -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Teenager">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Spectator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Telefilm -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Telefilm">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Episode_content"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Tv_Channel -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Tv_Channel">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Buyer_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://protege-owl/2022/film#Worker -->
+
+    <owl:Class rdf:about="http://protege-owl/2022/film#Worker">
+        <rdfs:subClassOf rdf:resource="http://protege-owl/2022/film#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://protege-owl/2022/film#Buyer1 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Buyer1">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Producer_Company"/>
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Streaming_Platform"/>
+        <film:bought rdf:resource="http://protege-owl/2022/film#Film2"/>
+        <film:bought rdf:resource="http://protege-owl/2022/film#Multimedia1"/>
+        <film:producerOf rdf:resource="http://protege-owl/2022/film#Multimedia1"/>
+        <film:companyName>Netflix</film:companyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Buyer2 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Buyer2">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Cinema"/>
+        <film:bought rdf:resource="http://protege-owl/2022/film#Film1"/>
+        <film:bought rdf:resource="http://protege-owl/2022/film#Film2"/>
+        <film:bought rdf:resource="http://protege-owl/2022/film#Film3"/>
+        <film:isLocated rdf:resource="http://protege-owl/2022/film#Location1"/>
+        <film:companyName>Principe</film:companyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Buyer3 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Buyer3">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Producer_Company"/>
+        <film:producerOf rdf:resource="http://protege-owl/2022/film#Film1"/>
+        <film:companyName>The Ladd Company</film:companyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Character1 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Character1">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Character"/>
+        <film:characterOf rdf:resource="http://protege-owl/2022/film#Film2"/>
+        <film:playedBy rdf:resource="http://protege-owl/2022/film#Person1"/>
+        <film:protagonistOf rdf:resource="http://protege-owl/2022/film#Film1"/>
+        <film:first_name>Rick</film:first_name>
+        <film:last_name>Decard</film:last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Character2 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Character2">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Character"/>
+        <film:playedBy rdf:resource="http://protege-owl/2022/film#Person2"/>
+        <film:protagonistOf rdf:resource="http://protege-owl/2022/film#Film2"/>
+        <film:first_name>K</film:first_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Character3 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Character3">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Character"/>
+        <film:playedBy rdf:resource="http://protege-owl/2022/film#Person1"/>
+        <film:protagonistOf rdf:resource="http://protege-owl/2022/film#Film3"/>
+        <film:first_name>Henry Walter</film:first_name>
+        <film:last_name>Jones</film:last_name>
+        <film:stage_name>Indiana Jones</film:stage_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Character4 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Character4">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Character"/>
+        <film:antagonistOf rdf:resource="http://protege-owl/2022/film#Film1"/>
+        <film:characterOf rdf:resource="http://protege-owl/2022/film#Film1"/>
+        <film:playedBy rdf:resource="http://protege-owl/2022/film#Person3"/>
+        <film:first_name>Roy</film:first_name>
+        <film:last_name>Batty</film:last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Character5 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Character5">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Character"/>
+        <film:playedBy rdf:resource="http://protege-owl/2022/film#Person4"/>
+        <film:playedBy rdf:resource="http://protege-owl/2022/film#Person5"/>
+        <film:first_name>James</film:first_name>
+        <film:last_name>Bond</film:last_name>
+        <film:stage_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</film:stage_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Film1 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Film1">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Feature_film"/>
+        <film:inFranchise rdf:resource="http://protege-owl/2022/film#Franchise1"/>
+        <film:box_office rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41600000</film:box_office>
+        <film:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000000</film:budget>
+        <film:genre>Sci-fi</film:genre>
+        <film:realization_technique>Live Action</film:realization_technique>
+        <film:release_date>25/06/1982</film:release_date>
+        <film:running_time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</film:running_time>
+        <film:title>Blade Runner</film:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Film2 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Film2">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Feature_film"/>
+        <film:inFranchise rdf:resource="http://protege-owl/2022/film#Franchise1"/>
+        <film:box_office rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">259300000</film:box_office>
+        <film:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">185000000</film:budget>
+        <film:genre>Drama</film:genre>
+        <film:genre>Sci-fi</film:genre>
+        <film:genre>Thriller</film:genre>
+        <film:realization_technique>Live Action</film:realization_technique>
+        <film:release_date>05/10/2017</film:release_date>
+        <film:running_time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">163</film:running_time>
+        <film:title>Blade Runner 2049</film:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Film3 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Film3">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Feature_film"/>
+        <film:hasProtagonist rdf:resource="http://protege-owl/2022/film#Character3"/>
+        <film:box_office rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">389900000</film:box_office>
+        <film:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000000</film:budget>
+        <film:genre>Action</film:genre>
+        <film:genre>Adventure</film:genre>
+        <film:realization_technique>Live Action</film:realization_technique>
+        <film:release_date>12/06/1981</film:release_date>
+        <film:running_time rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</film:running_time>
+        <film:title>Raiders of the Lost Ark</film:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Film4 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Film4">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Feature_film"/>
+        <film:containAsActor rdf:resource="http://protege-owl/2022/film#Person6"/>
+        <film:directedBy rdf:resource="http://protege-owl/2022/film#Person6"/>
+        <film:title>Cry Macho</film:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Film5 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Film5">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Feature_film"/>
+        <film:containAsActor rdf:resource="http://protege-owl/2022/film#Person6"/>
+        <film:title>The Good, The Bad and The Ugly</film:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Film6 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Film6">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Single_multimedia_content"/>
+        <film:hasCharacter rdf:resource="http://protege-owl/2022/film#Character5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Franchise1 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Franchise1">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Franchise"/>
+        <film:hasContent rdf:resource="http://protege-owl/2022/film#Film1"/>
+        <film:hasContent rdf:resource="http://protege-owl/2022/film#Film2"/>
+        <film:hasContent rdf:resource="http://protege-owl/2022/film#Multimedia1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Location1 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Location1">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#City"/>
+        <film:locationName>Florence</film:locationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Multimedia1 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Multimedia1">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#TV_serie"/>
+        <film:inFranchise rdf:resource="http://protege-owl/2022/film#Franchise1"/>
+        <film:producedBy rdf:resource="http://protege-owl/2022/film#Buyer1"/>
+        <film:duration_of_episodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</film:duration_of_episodes>
+        <film:genre>Sci-fi</film:genre>
+        <film:number_of_episodes rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</film:number_of_episodes>
+        <film:realization_technique>Animated</film:realization_technique>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Person1 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Person1">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Actor"/>
+        <film:starring rdf:resource="http://protege-owl/2022/film#Film1"/>
+        <film:starring rdf:resource="http://protege-owl/2022/film#Film2"/>
+        <film:starring rdf:resource="http://protege-owl/2022/film#Film3"/>
+        <film:workColleague rdf:resource="http://protege-owl/2022/film#Person2"/>
+        <film:first_name>Harrison</film:first_name>
+        <film:last_name>Ford</film:last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Person2 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Person2">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Actor"/>
+        <film:starring rdf:resource="http://protege-owl/2022/film#Film2"/>
+        <film:first_name>Ryan</film:first_name>
+        <film:last_name>Gosling</film:last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Person3 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Person3">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Actor"/>
+        <film:starring rdf:resource="http://protege-owl/2022/film#Film1"/>
+        <film:first_name>Rutger</film:first_name>
+        <film:last_name>Hauer</film:last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Person4 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Person4">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Actor"/>
+        <film:playCharacter rdf:resource="http://protege-owl/2022/film#Character5"/>
+        <film:starring rdf:resource="http://protege-owl/2022/film#Film6"/>
+        <film:first_name>Daniel</film:first_name>
+        <film:last_name>Craig</film:last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Person5 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Person5">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Actor"/>
+        <film:playCharacter rdf:resource="http://protege-owl/2022/film#Character5"/>
+        <film:first_name>Sean</film:first_name>
+        <film:last_name>Connery</film:last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Person6 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Person6">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Actor"/>
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Director"/>
+        <film:hasDirected rdf:resource="http://protege-owl/2022/film#Film4"/>
+        <film:starring rdf:resource="http://protege-owl/2022/film#Film4"/>
+        <film:starring rdf:resource="http://protege-owl/2022/film#Film5"/>
+        <film:first_name>Clint</film:first_name>
+        <film:last_name>Eastwood</film:last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Person7 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Person7">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Adult"/>
+        <film:favorite rdf:resource="http://protege-owl/2022/film#Film1"/>
+        <film:liked rdf:resource="http://protege-owl/2022/film#Film5"/>
+        <film:subscribed rdf:resource="http://protege-owl/2022/film#Buyer1"/>
+        <film:first_name>Massimiliano</film:first_name>
+        <film:last_name>Sirgiovanni</film:last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Person8 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Person8">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Composer"/>
+        <film:first_name>Hans</film:first_name>
+        <film:last_name>Zimmer</film:last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://protege-owl/2022/film#Song1 -->
+
+    <owl:NamedIndividual rdf:about="http://protege-owl/2022/film#Song1">
+        <rdf:type rdf:resource="http://protege-owl/2022/film#Soundtrack"/>
+        <film:composedBy rdf:resource="http://protege-owl/2022/film#Person8"/>
+        <film:duration>3:38</film:duration>
+        <film:songTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2049</film:songTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Adult"/>
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Child"/>
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Elder"/>
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Teenager"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Company"/>
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Location"/>
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Multimedia_content"/>
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Person"/>
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Soundtrack"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Feature_film"/>
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Medium-length_film"/>
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Short_film"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Film"/>
+            <rdf:Description rdf:about="http://protege-owl/2022/film#TV_serie"/>
+            <rdf:Description rdf:about="http://protege-owl/2022/film#Telefilm"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
